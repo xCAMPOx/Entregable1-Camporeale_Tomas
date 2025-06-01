@@ -1,0 +1,75 @@
+/* CENTRAR CONTENEDOR PRINCIPAL vertical y horizontalmente */
+body, html {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fdf6e3;
+  color: #5d4037;
+  font-family: 'Segoe UI', sans-serif;
+  text-align: center;
+}
+
+/* Que el contenedor no sea demasiado ancho y tenga padding */
+.contenedor-principal {
+  max-width: 700px;
+  width: 90%;
+  background-color: #fff8e1;
+  padding: 30px 40px;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  box-sizing: border-box;
+}
+
+/* Espaciado entre botones de opciones */
+#opciones-container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;  /* espacio vertical entre botones */
+  margin-bottom: 20px;
+  align-items: center; /* centrar botones */
+}
+
+/* Botones estilo general */
+button {
+  padding: 14px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  min-width: 180px; /* ancho mínimo para que queden uniformes */
+  transition: background-color 0.3s;
+}
+
+/* Estilo específico para opciones */
+.opcion-btn {
+  background-color: #ffe0b2;
+  color: #4e342e;
+  font-weight: 600;
+}
+
+.opcion-btn:hover {
+  background-color: #ffd54f;
+}
+
+/* Botones de acciones */
+.boton-accion {
+  background-color: #ff7043;
+  color: white;
+  margin-top: 20px;
+  min-width: 200px;
+  font-weight: 700;
+}
+
+.boton-accion:hover {
+  background-color: #ff5722;
+}
+
+/* Espacio entre botones "Ver puntaje" y "Reiniciar" */
+.acciones-extra {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  gap: 25px; /* espacio horizontal entre botones */
+}

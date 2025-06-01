@@ -1,14 +1,38 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Juego de Preguntas</title>
-  </head>
-  <body>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Juego de Preguntas</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <div class="contenedor-principal">
     <h1>Juego de Preguntas de Opción Múltiple</h1>
-    <p>Vamos a ver cuanto sabes</p>
+    <p>Vamos a ver cuánto sabés</p>
 
-    <script src="script.js"></script>
-  </body>
+    <!-- Botón de inicio -->
+    <div id="inicio-container">
+      <button id="btn-iniciar" class="boton-accion">Iniciar Juego</button>
+    </div>
+
+    <!-- Contenedor del juego (oculto al inicio) -->
+    <div id="juego-container" style="display: none;">
+      <div id="pregunta-container">
+        <p id="pregunta-texto"></p>
+        <div id="opciones-container"></div>
+      </div>
+
+      <button id="btn-siguiente" class="boton-accion" style="display: none;">Siguiente</button>
+      <p id="puntaje-final" style="display: none;"></p>
+
+      <div class="acciones-extra">
+        <button id="btn-ver-puntaje">Ver Puntaje Guardado</button>
+        <button id="btn-reiniciar">Reiniciar Juego</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
 </html>
